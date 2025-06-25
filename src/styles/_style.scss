@@ -212,7 +212,7 @@
   .contactText{
     width: 80%;
     position: absolute;
-    top: 50%; left: 20%;
+    top: 50%; left: 12%;
     transform: translateY(-50%);
     .titleCopy{
       display: flex;
@@ -242,6 +242,7 @@
       letter-spacing: -0.5px;
       transition: transform 0.3s ease;
       transform-origin: left center;
+      word-break: break-word;
     }
   }
 }
