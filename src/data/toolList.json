@@ -1,0 +1,35 @@
+{
+  "Front_end": [
+    { "title": "HTML5", "icon": "HtmlIcon", "color": "#E34F26" },
+    { "title": "CSS3", "icon": "CssIcon", "color": "#007DC6" },
+    { "title": "JavaScript", "icon": "ScriptIcon", "color": "#F7DF1E" },
+    { "title": "React", "icon": "ReactIcon", "color": "#00D8FF" },
+    { "title": "Sass", "icon": "SassIcon", "color": "#CC6699" },
+    { "title": "Flutter", "icon": "FlutterIcon", "color": "#5FC9F8" }
+  ],
+  "Library": [
+    { "title": "Axios", "icon": "AxiosIcon", "color": "#5A29E4" },
+    { "title": "Zustand", "icon": "ZustandIcon", "color": "#443E38" },
+    { "title": "GetX", "icon": "GetxIcon", "color": "#7B17BE" }
+  ],
+  "Back_end": [
+    { "title": "Node.js", "icon": "NodeIcon", "color": "#3E863D" },
+    { "title": "PHP", "icon": "PhpIcon", "color": "#777BB3" },
+    { "title": "mongoDB", "icon": "MongoIcon", "color": "#58AA50" },
+    { "title": "MySQL", "icon": "SqlIcon", "color": "#00618A" },
+    { "title": "XAMPP", "icon": "XamppIcon", "color": "#FA7923" },
+    { "title": "Express", "icon": "ExpressIcon", "color": "#333333" }
+  ],
+  "Deployment": [
+    { "title": "Git", "icon": "GitZeroIcon", "color": "#F4511E" },
+    { "title": "GitHub", "icon": "GitIcon", "color": "#333333" },
+    { "title": "Vercel", "icon": "VercelIcon", "color": "#333333" },
+    { "title": "dothome", "icon": "DothomeIcon", "color": "#036EB8" }
+  ],
+  "Design": [
+    { "title": "Figma", "icon": "FigmaIcon", "color": "#F24E1E" },
+    { "title": "Photoshop", "icon": "PhotoshopIcon", "color": "#30A8FF" },
+    { "title": "Illustrator", "icon": "IllustratorIcon", "color": "#FF9A00" },
+    { "title": "InDesign", "icon": "IndesignIcon", "color": "#FF3366" }
+  ]
+}
