@@ -31,7 +31,7 @@ function Detail() {
     window.scrollTo(0,0);
   },[id])
 
-  if(!data){return <p>프로젝트를 찾을 수 없습니다ㅜㅡㅜ</p>}
+  if(!data){return <p>프로젝트를 찾을 수 없습니다.</p>}
 
   return (
     <div className='detailpage'>
@@ -125,7 +125,7 @@ function Detail() {
         )}
         {issueData.map((section, i) => (
           <div className='devlopTextSection' key={i}>
-            {/* 리스트가 있을 경우 */}
+            {/* 리스트가 있을 경우와 없을 경우 분류 */}
             {section.list?.length > 0 ? (
               <>
                 <p>{`📌 ${section.title || '파일명 없음'}`}</p>

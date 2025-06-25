@@ -54,8 +54,8 @@ function Home() {
             <motion.div
               animate={{ opacity: [1, 0, 1] }}
               transition={{
-                duration: 1,        // 한 사이클에 걸리는 시간
-                repeat: 2,          // 3번 깜빡이려면 repeat: 2 (총 3회 표시됨)
+                duration: 1, // 한 사이클에 걸리는 시간
+                repeat: 2, // 3번 깜빡이려면 repeat: 2 (총 3회 표시됨)
                 repeatType: 'loop'
               }}
             >
@@ -65,7 +65,7 @@ function Home() {
           </div>
           <div className='homeMainText'>
             <p>
-              init(frontend) & Load(Potential) <br/>
+              init(Frontend) & Load(Potential) <br/>
               프론트엔드를 시작하고, 가능성이 현실로 펼쳐지다
             </p>
             <p>

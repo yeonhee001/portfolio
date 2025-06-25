@@ -10,7 +10,6 @@ import '../styles/work/work.scss'
 function Work() {
 
   const navi = useNavigate();
-  const {id} = useParams();
 
   const projectType = (type)=>{
     return projectList.filter(p => p.type===type).sort((a,b)=> b.id - a.id);
