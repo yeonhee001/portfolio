@@ -17,7 +17,7 @@ function About() {
   const educationList = [
     {
       date: '2024.12 - 2025.06',
-      title: '강남 그린컴퓨터아카데미',
+      title: '역삼 그린컴퓨터아카데미',
       content: '@프론트엔드(React, PHP), 플러터(Flutter)활용 웹&앱개발 과정 수료',
       details: [
         '· 프로젝트 기반 커리큘럼으로 기획, 퍼블리싱, 프론트엔드, 백엔드 전 과정을 학습',
