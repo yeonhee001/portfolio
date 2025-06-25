@@ -40,7 +40,7 @@ function ContactItem({onClick, icons, title, content}) {
       </div>
 
       <Snackbar open={open} autoHideDuration={2000} onClose={handleClose} anchorOrigin={{ vertical: 'top', horizontal: 'center' }}>
-        <Alert onClose={handleClose} severity="success" sx={{ width: '100%', fontSize: '1.2rem', padding: '20px 50px', borderRadius: '12px', minWidth: '300px'}}>
+        <Alert onClose={handleClose} severity="success" sx={{ width: '100%', fontSize: '1rem', padding: '16px 45px', borderRadius: '12px', minWidth: '300px'}}>
           {`${content} 복사되었습니다.`}
         </Alert>
       </Snackbar>
