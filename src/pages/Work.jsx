@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import PageTitle from '../component/_common/PageTitle'
 import TitleBar from '../component/work/TitleBar'
 import CardItem from '../component/_common/CardItem'

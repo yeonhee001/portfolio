@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from "motion/react"
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Box from '@mui/material/Box';
 import Masonry from '@mui/lab/Masonry';
 import RightMainIcon from '../component/icons/RightMainIcon'
 import Typing from '../component/home/Typing';
-import Computer from '../component/icons/Computer'
-import Star from '../component/icons/Star'
 import ToolsItem from '../component/_common/ToolsItem'
 import RightMiniGreyIcon from '../component/icons/RightMiniGreyIcon'
 import TopBar from '../component/home/TopBar'
@@ -20,7 +18,6 @@ import projectList from '../data/projectList.json'
 
 function Home() {
   const navi = useNavigate();
-  const {id} = useParams();
   const [typingDone, setTypingDone] = useState(false);
 
   // json 파일 사용해 아이콘 출력
@@ -49,9 +46,7 @@ function Home() {
         <div className='homeText'>
           <div className='homeMainTitle'>
             <div className='homeTitle'>
-              <Typing text={`Init(💻)\nLoad(🌟)`} className="homeLine" onComplete={()=>setTypingDone(true)}/>
-              {/* <b>init(<Computer className={'homeComputer'}/>)</b>
-              <b>Load(<Star className={'homeStar'}/>)</b> */}
+              <Typing text={`Init(💻)\nLoad(🌟);`} className="homeLine" onComplete={()=>setTypingDone(true)}/>
             </div>
             
             {typingDone && (
@@ -70,7 +65,7 @@ function Home() {
           </div>
           <div className='homeMainText'>
             <p>
-              init(Frontend) & Load(Potential) <br/>
+              init(Frontend) & Load(Potential); <br/>
               프론트엔드를 시작하고, 가능성이 현실로 펼쳐지다
             </p>
             <p>
