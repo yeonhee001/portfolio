@@ -1,0 +1,65 @@
+[
+  {
+    "id": 6,
+    "img1": "HomeItemImage06.png",
+    "img2": "WorkImage04.png",
+    "title": "흔적",
+    "content": "독서 기록 앱 Mobile",
+    "tool": "Flutter, PHP, hive, GetX, MySQL",
+    "type": "TEAM"
+  },
+  {
+    "id": 3,
+    "img1": "HomeItemImage04.png",
+    "img2": "WorkImage02.png",
+    "title": "떠나봅서",
+    "content": "정보 전달 웹 Tab, Mobile",
+    "tool": "React, Sass, Zustand, Node.js, MongoDB",
+    "type": "TEAM"
+  },
+  {
+    "id": 4,
+    "img1": "HomeItemImage03.png",
+    "img2": "WorkImage03.png",
+    "title": "Ripo",
+    "content": "쇼핑몰 웹 Mobile",
+    "tool": "React, Sass, PHP, MySQL",
+    "type": "TEAM"
+  },
+  {
+    "id": 5,
+    "img1": "HomeItemImage05.png",
+    "img2": "WorkImage06.png",
+    "title": "PlanIt",
+    "content": "일정 관리 앱 Mobile",
+    "tool": "Flutter, hive",
+    "type": "PERSONAL"
+  },
+  {
+    "id": 1,
+    "img1": "HomeItemImage01.png",
+    "img2": "WorkImage01.png",
+    "title": "SANGREEN",
+    "content": "리뉴얼 반응형 웹사이트 PC, Tab, Mobile",
+    "tool": "HTML, Sass, JavaScript",
+    "type": "TEAM"
+  },
+  {
+    "id": 2,
+    "img1": "HomeItemImage02.png",
+    "img2": "WorkImage05.png",
+    "title": "yeonFLIX",
+    "content": "영화, 드라마 정보 전달 웹사이트\nPC, Tab, Mobile",
+    "tool": "React, Sass, Zustand, themovieDB API",
+    "type": "PERSONAL"
+  },
+  {
+    "id": 7,
+    "img1": "",
+    "img2": "WorkImage07.png",
+    "title": "ALKI ALKA",
+    "content": "디자이너 브랜드 알키알카 웹사이트 유지보수",
+    "tool": "Photoshop, Illustrator, imweb",
+    "type": "WEB-DESIGN"
+  }
+]

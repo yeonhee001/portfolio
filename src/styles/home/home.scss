@@ -1,0 +1,184 @@
+@import '../variables';
+
+@mixin width() {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.home{
+  .homeMain{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    .homeBg{
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      >img{width: 100vw; height: 100vh}
+    }
+    .homeText{
+      @include width();
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      height: 100vh;
+      .homeMainTitle{
+        display: flex;
+        align-items: center;
+        .homeTitle{
+          .homeLine{
+            white-space: normal;
+            display: block;
+            font-family: $fontTitle;
+            font-weight: 700;
+            font-size: 165px;
+            line-height: 203px;
+            letter-spacing: 12px;
+          }
+          .line-color-0{
+            color: $skyBlue;
+          }
+          .line-color-1{
+            color: $mainBlue;
+          }
+        }
+        .homeRightMainIcon{
+          width: 200px;
+          >img{
+            width: 100%;
+          }
+        }
+      }
+    }
+    .homeMainText{
+      color: $deepBlue;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-family: $fontConB;
+      font-size: 30px;
+      line-height: 43px;
+      width: 100%;
+      // padding-top: 110px;
+      >p:nth-of-type(2){text-align: right;}
+    }
+  }
+
+  .home-profile{
+    @include width();
+    padding: 200px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .profileImg{
+      width: 492px; height: 747px;
+      img{width: 100%;}
+    }
+    .profileRight{
+      height: 747px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      cursor: pointer;
+      .profileText{
+        display: flex;
+        gap: 30px;
+        img:nth-of-type(1){width: 49px; height: 41px;}
+        .profileContent{
+          >b{
+            text-align: center;
+            font-family: $fontConB;
+            font-size: 50px;
+            line-height: 67px;
+            display: block;
+            >span{color: $mainBlue;}
+          }
+          >p{
+            padding-top: 28px;
+            text-align: center;
+            font-size: 30px;
+            line-height: 40px;
+          }
+        }
+        img:nth-of-type(2){
+          width: 49px; height: 41px;
+          align-self: flex-end;
+        }
+      }
+      .profileIcons{
+        display: flex;
+        flex-direction: column;
+        padding-top: 80px;
+        width: 100%;
+        .iconsTop, .iconsBottom{
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+        }
+        .iconsTop{
+          padding-bottom: 40px;
+        }
+      }
+      .profileBtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top:40px;
+        align-self: flex-end;
+        >p{
+          font-size: 20px;
+          color: $font5;
+          padding-right: 5px;
+        }
+        .aboutRightIcon{padding-left: 8px;}
+      }
+    }
+  }
+  .home-project{
+    @include width();
+    .home-projectItem{
+      margin-bottom: 40px;
+      margin-right: 35px;
+    }
+  }
+  .home-contact{
+    @include width();
+    padding: 200px 0;
+    .home-contactItem{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+
+.homeMenuTop{
+  font-family: $fontTitle;
+  font-weight: 500;
+  font-size: 120px;
+  color: $deepBlue;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+//typing 커서
+.cursor{
+  font-family: $fontConR;
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+@import './res-home';

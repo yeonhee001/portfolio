@@ -1,0 +1,59 @@
+// ======================
+// ========width=========
+// ======================
+
+// $publicWidth: calc(100% - 60px);
+
+// ======================
+// ========color=========
+// ======================
+
+// * font color
+$font3: #333;
+$font5: #555;
+$font9: #999;
+$fontf: #fff;
+
+// * point color 
+$lightBlue: #EAEFF7;
+$skyBlue: #85A5F2;
+$mainBlue: #214DD0;
+$deepBlue: #3F5BAE;
+$navyBlue: #495579;
+$bgBlue: rgba(234, 239, 247, 0.4);
+
+// * btn color 
+$siteYellow: #FBF3E2;
+$gitLightYellow: #F9F7F3;
+$notionWhite: #FFFFFF;
+
+// ======================
+// =========font=========
+// ======================
+@font-face {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css');
+
+$fontTitle: 'Oxanium', sans-serif;
+$fontConL: 'NanumSquareLight';
+$fontConR: 'NanumSquare';
+$fontConB: 'NanumSquareBold';
+$fontConEB: 'NanumSquareExtraBold';
+$fontContact: 'GangwonEduSaeeum_OTFMediumA';
+
+
+// ======================
+// ======font size=======
+// ======================
+
+// $bigTitle: 26px;
+// $title: 20px;
+// $subTitle: 18px;
+// $regular: 16px;
+// $small: 14px;
+// $footer: 12px;

@@ -1,0 +1,46 @@
+@import '../variables';
+
+@mixin width() {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.work{
+  @include width();
+
+  margin-top: 200px;
+  .workTeam{
+    padding-bottom: 100px;
+  }
+  .workPersonal{
+    padding: 100px 0;
+    border-top: 1px solid $font9;
+  }
+  .workWeb{
+    padding: 100px 0;
+    border-top: 1px solid $font9;
+  }
+  .workItem{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 36px;
+  }
+}
+
+.workTopBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 22px;
+  >p{
+    font-family: $fontConB;
+    font-size: 50px;
+    color: $navyBlue;
+  }
+  >span{
+    font-size: 20px;
+    color: $font9;
+  }
+}
+
+@import './res-work';

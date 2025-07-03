@@ -1,0 +1,219 @@
+@mixin width90() {
+  width: 90%;
+  margin: 0 auto;
+}
+
+// ========================================아이패드========================================
+@media (min-width:768px) and (max-width:1580px){
+  .home{
+    .homeMain{
+      .homeText{
+        @include width90();
+        justify-content: flex-end;
+        gap: 20%;
+        padding-bottom: 3%;
+        .homeMainTitle{
+          .homeTitle{
+            .homeLine{
+              font-size: 115px;
+              line-height: 160px;
+            }
+          }
+          .homeRightMainIcon{
+            width: 140px;
+            >img{
+              width: 100%;
+            }
+          }
+        }
+      }
+      .homeMainText{
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+
+    .home-profile{
+      @include width90();
+      padding: 150px 0;
+      justify-content: flex-start;
+      gap: 60px;
+      .profileImg{
+        width: 35%; height: auto;
+        display: none;
+      }
+      .profileRight{
+        flex: 1;
+        height: auto;
+        .profileText{
+          gap: 20px;
+          img:nth-of-type(1){width: 40px; height: 34px;}
+          .profileContent{
+            >b{
+              font-size: 30px;
+              line-height: 42px;
+              letter-spacing: -1px;
+            }
+            >p{
+              padding-top: 15px;
+              font-size: 18px;
+              line-height: 25px;
+            }
+          }
+          img:nth-of-type(2){
+            width: 40px; height: 34px;
+          }
+        }
+        .profileIcons{
+          width: 80%;
+          padding-top: 40px;
+          .iconsTop{
+            padding-bottom: 20px;
+          }
+        }
+        .profileBtn{
+          justify-content: flex-end;
+          padding-top:20px;
+          margin-right: 10%;
+          >p{
+            font-size: 14px;
+          }
+          .aboutRightIcon{
+            padding-left: 6px;
+            width: 15px;
+            >img{width: 100%;}
+          }
+        }
+      }
+    }
+    .home-project{
+      @include width90();
+      .home-projectItem{
+        margin-bottom: 20px;
+      }
+    }
+    .home-contact{
+      @include width90();
+      padding: 150px 0;
+    }
+  }
+
+  .homeMenuTop{
+    font-size: 90px;
+  }
+}
+
+// ========================================모바일========================================
+@media (max-width:767px) {
+  .home{
+    .homeMain{
+      .homeText{
+        @include width90();
+        justify-content: flex-end;
+        gap: 20%;
+        padding-bottom: 10%;
+        .homeMainTitle{
+          flex-direction: column;
+          align-items: flex-start;
+          .homeTitle{
+            .homeLine{
+              font-size: 70px;
+              line-height: 100px;
+              letter-spacing: 7px;
+              .homeComputer, .homeStar{
+                width: 70px; height: 70px;
+              }
+            }
+          }
+          .homeRightMainIcon{
+            width: 120px;
+            >img{
+              width: 100%;
+            }
+          }
+        }
+      }
+      .homeMainText{
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .home-profile{
+      @include width90();
+      padding: 100px 0;
+      justify-content: flex-start;
+      gap: 60px;
+      .profileImg{
+        width: 35%; height: auto;
+        display: none;
+      }
+      .profileRight{
+        flex: 1;
+        height: auto;
+        .profileText{
+          gap: 20px;
+          img:nth-of-type(1){width: 40px; height: 34px;}
+          .profileContent{
+            >b{
+              font-size: 30px;
+              line-height: 42px;
+              letter-spacing: -1px;
+            }
+            >p{
+              padding-top: 15px;
+              font-size: 18px;
+              line-height: 25px;
+            }
+          }
+          img:nth-of-type(2){
+            width: 40px; height: 34px;
+          }
+        }
+        .profileIcons{
+          width: 100%;
+          padding-top: 40px;
+          .iconsTop, .iconsBottom{
+            flex-wrap: wrap;
+            .toolsItem{width: 33%;}
+          }
+          .iconsTop{
+            padding-bottom: 0;
+          }
+        }
+        .profileBtn{
+          justify-content: flex-end;
+          padding-top:10px;
+          margin-right: 0;
+          >p{
+            font-size: 14px;
+          }
+          .aboutRightIcon{
+            padding-left: 6px;
+            width: 14px;
+            >img{width: 100%;}
+          }
+        }
+      }
+    }
+    .home-project{
+      @include width90();
+      .home-projectItem{
+        margin-bottom: 20px;
+      }
+    }
+    .home-contact{
+      @include width90();
+      padding: 50px 0 100px;
+      .home-contactItem{
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .homeMenuTop{
+    font-size: 70px;
+    letter-spacing: -1.5px;
+  }
+}

@@ -1,0 +1,216 @@
+@import '../variables';
+
+@mixin width() {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+h2{
+  font-size: 50px;
+  font-family: $fontConB;
+  color: $navyBlue;
+}
+
+.about{
+  @include width();
+  margin-top: 200px;
+  .about-profile{
+    padding: 30px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .profileImg{
+      width: 492px;
+      img{width: 100%;}
+    }
+    .profileRight{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      .profileText{
+        display: flex;
+        gap: 30px;
+        img:nth-of-type(1){width: 49px; height: 41px;}
+        .profileContent{
+          >b{
+            text-align: center;
+            font-family: $fontConB;
+            font-size: 50px;
+            line-height: 67px;
+            display: block;
+            >span{color: $mainBlue;}
+          }
+          >p{
+            padding-top: 28px;
+            text-align: center;
+            font-size: 30px;
+            line-height: 40px;
+          }
+        }
+        img:nth-of-type(2){
+          width: 49px; height: 41px;
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}
+
+.aboutTools{
+  padding: 100px 0;
+  .aboutToolTop{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    >p{font-size: 20px; color: $font9;}
+  }
+  .front{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .toolAll{
+      width: 100%;
+      padding: 40px 0;
+      border-bottom: 1px solid $font9;
+    }
+    .toolAll:nth-last-of-type(1){border: none;}
+    
+  }
+}
+
+.aboutMeForm{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.aboutContact{
+  padding: 100px 0 150px;
+  .aboutContactTop{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    >p{
+      font-size: 35px;
+      font-family: $fontContact;
+      color: $navyBlue;
+    }
+  }
+  .aboutContactItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+}
+
+//Education컴포넌트
+.education{
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  .eduItem{
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 40px;
+    .line{
+      position: absolute;
+      left: 16px;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background:$navyBlue;
+    }
+    .dot{
+      position: absolute;
+      left: 11px;
+      top: 15px;
+      width: 12px;
+      height: 12px;
+      background: $navyBlue;
+      border-radius: 50%;
+    }
+    .eduContent{
+      padding: 15px 0;
+      >p:nth-of-type(1){
+        font-family: $fontConB;
+        padding-bottom: 10px;
+      }
+      >h4{
+        font-family: $fontConB;
+        font-size: 25px;
+      }
+      >b{
+        display: block;
+        font-family: $fontConB;
+        font-size: 20px;
+        padding: 4px 0 16px;
+      }
+      >p{
+        padding-bottom: 6px;
+        color: $font5;
+      }
+    }
+  }
+}
+
+//ToolsNoopen컴포넌트
+.toolsNoopen{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  .category-title{
+    width: 300px;
+    font-size: 35px;
+    font-family: $fontConB;
+    color: $navyBlue;
+  }
+  .frontTools{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 100px;
+  }
+}
+
+//ToolsOpen컴포넌트
+.toolsOpen{
+  padding-top: 30px;
+  margin-left: 300px;
+  .openText{
+    padding-bottom: 15px;
+    color: $font5;
+    span{
+      background-color: $lightBlue;
+      padding: 3px 5px;
+      border-radius: 5px;
+    }
+  }
+}
+
+//Introduction컴포넌트
+.introduction{
+  background-color: $bgBlue;
+  border-radius: 30px;
+  padding: 50px 39px;
+  >b{
+    display: block;
+    font-size: 25px;
+    padding-bottom: 13px;
+  }
+  >p{
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+  }
+}
+
+@import './res-about';

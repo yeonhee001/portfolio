@@ -1,0 +1,320 @@
+@mixin width90() {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+// ========================================아이패드========================================
+@media (min-width:768px) and (max-width:1580px){
+  .detailpage{
+  margin-top: 150px;
+  
+  .detailLogo{
+    @include width90();
+    padding-bottom: 40px;
+  }
+  .detailSlide{
+    @include width90();
+    .detailswiper{
+      border-radius: 20px;
+      .swiper-slide{img{width: 100%;}}
+    }
+  }
+  
+  .detailInfo{
+    @include width90();
+    padding: 50px 0 80px;
+    .info-top{
+      align-items: flex-end;
+      .info-left{
+        display: block;
+        >b{
+          font-size: 35px;
+        }
+        .info-tag{
+          padding-top: 10px;
+          >span{
+            font-size: 14px;
+            border-radius: 20px;
+            padding: 4px 10px;
+          }
+        }
+      }
+      .info-right{
+        font-size: 14px;
+      }
+    }
+
+    .info-top-text{
+      padding: 40px 0 30px;
+    }
+    .info-btn{
+      gap: 20px;
+      .yellowBtn{background-color: $siteYellow;}
+      .grayBtn{background-color: $gitLightYellow;}
+    }
+  }
+
+  .detailImageText{
+    padding: 80px 0;
+    .section{
+      @include width90();
+      padding-bottom: 70px;
+    }
+  }
+
+  .detailDevlop{
+    @include width90();
+    padding: 80px 0 60px;
+    h4{
+      font-size: 35px;
+      padding-bottom: 20px;
+    }
+    .devlopTextSection{
+      >p{
+        font-size: 20px;
+        padding-bottom: 12px;
+      }
+      .devlopText{
+        padding-bottom: 20px;
+        span{
+          font-size: 16px;
+          padding-left: 35px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+  .detailBottomBg{
+    padding: 80px 0;
+    .detailBottom{
+      @include width90();
+      >h2{
+        font-size: 35px;
+        padding-bottom: 20px;
+      }
+      .detailbottomswiper{
+        .swiper-slide{
+          // width: 30% !important;
+          .detailcardItem{
+            width: 90%;
+            flex-shrink: 0;
+            .cardItemImg{
+              width: 100%;
+              >img{width: 100%; object-fit: cover;}  
+            }
+            .cardItemText{
+              width: 100%;
+              >b{font-size: 18px; padding-bottom: 7px;}
+              >p{font-size: 14px;}
+            }
+          }
+        }
+        .swiper-pagination {
+          bottom: -40px !important; // 원하는 위치로 조정
+        }
+      }
+    }
+  }
+
+  //IntroText컴포넌트
+  .detailIntroText{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    >p{
+      width: 20%;
+    }
+  }
+
+  //BtnItem컴포넌트
+  .detailBtnItem{
+    width: auto;
+    padding: 15px 25px;
+    font-size: 20px;
+  }
+
+  //ImageItem컴포넌트
+  .detailImageItem{
+    display: block;
+    gap: 40px;
+    &.reverse{flex-direction: reverse;}
+    .imageItemImg{
+      width: 100%; height: auto;
+      >img{ width: 100%;}
+    }
+    .imageItemText{
+      >b{
+        font-size: 20px;
+        padding: 16px 0 10px;
+      }
+      >p{
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+
+// ========================================모바일========================================
+@media (max-width:767px) {
+  .detailpage{
+  margin-top: 100px;
+  
+  .detailLogo{
+    @include width90();
+    padding-bottom: 20px;
+    >img{height: 70px;}
+  }
+  .detailSlide{
+    @include width90();
+    .detailswiper{
+      border-radius: 20px;
+      .swiper-slide{img{width: 100%;}}
+    }
+  }
+  
+  .detailInfo{
+    @include width90();
+    padding: 20px 0 50px;
+    .info-top{
+      display: block;
+      .info-left{
+        display: block;
+        >b{
+          font-size: 25px;
+        }
+        .info-tag{
+          display: flex;
+          flex-wrap: wrap;
+          padding-top: 10px;
+          >span{
+            font-size: 12px;
+            border-radius: 20px;
+            padding: 4px 10px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+      .info-right{
+        display: none;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+    }
+
+    .info-top-text{
+      padding: 30px 0 30px;
+    }
+    .info-btn{
+      display: block;
+      .yellowBtn{background-color: $siteYellow;}
+      .grayBtn{background-color: $gitLightYellow; margin: 10px 0;}
+    }
+  }
+
+  .detailImageText{
+    padding: 50px 0;
+    .section{
+      @include width90();
+      padding-bottom: 50px;
+    }
+  }
+
+  .detailDevlop{
+    @include width90();
+    padding: 50px 0 30px;
+    h4{
+      font-size: 25px;
+      padding-bottom: 10px;
+    }
+    .devlopTextSection{
+      >p{
+        font-size: 18px;
+        padding-bottom: 7px;
+      }
+      .devlopText{
+        padding-bottom: 12px;
+        span{
+          font-size: 16px;
+          padding-left: 30px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+  .detailBottomBg{
+    padding: 50px 0;
+    .detailBottom{
+      @include width90();
+      >h2{
+        font-size: 25px;
+        padding-bottom: 20px;
+      }
+      .detailbottomswiper{
+        .swiper-slide{
+          // width: 37% !important;
+          .detailcardItem{
+            width: 90%;
+            flex-shrink: 0;
+            .cardItemImg{
+              width: 100%;
+              margin-bottom: 10px;
+              >img{width: 100%; object-fit: cover;}  
+            }
+            .cardItemText{
+              width: 100%;
+              >b{font-size: 16px; padding-bottom: 5px;}
+              >p{font-size: 12px;}
+            }
+          }
+        }
+        .swiper-pagination {
+          bottom: -30px !important; // 원하는 위치로 조정
+        }
+      }
+    }
+  }
+
+  //IntroText컴포넌트
+  .detailIntroText{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    >p{
+      width: 23%;
+    }
+  }
+
+  //BtnItem컴포넌트
+  .detailBtnItem{
+    width: 100%;
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  //ImageItem컴포넌트
+  .detailImageItem{
+    display: block;
+    &.reverse{flex-direction: reverse;}
+    .imageItemImg{
+      width: 100%; height: auto;
+      >img{ width: 100%;}
+    }
+    .imageItemText{
+      >b{
+        font-size: 18px;
+        padding: 16px 0 7px;
+      }
+      >p{
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}

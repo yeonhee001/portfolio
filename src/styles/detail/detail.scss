@@ -1,0 +1,223 @@
+@import '../variables';
+
+@mixin width() {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.detailpage{
+  margin-top: 200px;
+  
+  .detailLogo{
+    @include width();
+    padding-bottom: 45px;
+    >img{height: 100px;}
+  }
+  .detailSlide{
+    @include width();
+    .detailswiper{
+      // border: 0.5px solid $font9;
+      border-radius: 30px;
+    }
+  }
+  
+  .detailInfo{
+    @include width();
+    padding: 100px 0;
+    .info-top{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .info-left{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        >b{
+          display: block;
+          font-size: 40px;
+          font-family: $fontConR;
+        }
+        .info-tag{
+          >span{
+            font-size: 16px;
+            border: 1px solid $font9;
+            border-radius: 30px;
+            padding: 6px 15px;
+            margin-right: 10px;
+          }
+        }
+      }
+      .info-right{
+        font-size: 16px;
+        color: $font5;
+      }
+    }
+
+    .info-top-text{
+      padding: 40px 0 30px;
+    }
+    .info-btn{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 40px;
+      // z-index: 11;
+      position: relative;
+      .yellowBtn{background-color: $siteYellow;}
+      .grayBtn{background-color: $gitLightYellow;}
+      .whiteBtn{background-color: $notionWhite; border: 0.5px solid $font9;}
+    }
+  }
+
+  .detailImageText{
+    background-color: $bgBlue;
+    padding: 100px 0;
+    .section{
+      @include width();
+      padding-bottom: 70px;
+      &:last-child {
+        padding-bottom: 0;
+      }
+      >.detailDesignImage{
+        >.imageItemImg{
+          >img{width: 100%;}
+        }
+      }
+    }
+  }
+
+  .detailDevlop{
+    @include width();
+    padding: 100px 0;
+    h4{
+      font-family: $fontConB;
+      font-size: 40px;
+      padding-bottom: 40px;
+    }
+    .devlopTextSection{
+      >p{
+        font-family: $fontConB;
+        font-size: 25px;
+        padding-bottom: 16px;
+      }
+      .devlopText{
+        padding-bottom: 20px;
+        span{
+          display: block;
+          font-size: 20px;
+          padding-left: 40px;
+          padding-bottom: 10px;
+        }
+      }
+      .devlopImg{
+        >img{width: 100%}
+      }
+    }
+  }
+}
+
+.detailBottomBg{
+  background-color: $bgBlue;
+  padding: 100px 0;
+  cursor: pointer;
+  .detailBottom{
+    @include width();
+    position: relative;
+    >h2{
+      font-family: $fontConB;
+      font-size: 40px;
+      padding-bottom: 20px;
+    }
+    .detailbottomswiper{
+      width: 100%;
+      overflow: visible;
+      .swiper-slide{
+        flex-shrink: 0;
+        .detailcardItem{
+          width: 90%;
+          flex-shrink: 0;
+          .cardItemImg{
+            width: 100%;
+            >img{width: 100%; object-fit: cover;}  
+          }
+          .cardItemText{
+            width: 100%;
+            >b{font-size: 24px; padding-bottom: 7px;}
+            >p{font-size: 18px;}
+          }
+        }
+      }
+      .swiper-pagination {
+        bottom: -50px !important; // 원하는 위치로 조정
+        text-align: center;
+      }
+    }
+  }
+}
+
+// 활성화된 블릿
+.swiper-pagination-bullet-active {
+  background: $navyBlue;
+}
+
+//IntroText컴포넌트
+.detailIntroText{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 25px;
+  line-height: 35px;
+  margin-bottom: 12px;
+  >p{
+    width: 200px;
+  }
+  >span{
+    display: block;
+    flex: 1;
+  }
+}
+
+//BtnItem컴포넌트
+.detailBtnItem{
+  width: 380px;
+  padding: 25px 0;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 25px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+//ImageItem컴포넌트
+.detailImageItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  &.reverse{flex-direction: row-reverse;}
+  .imageItemImg{
+    width: 685px; height: 332px;
+    >img{width: 100%; height: 100%;}
+  }
+  .imageItemText{
+    flex: 1;
+    >b{
+      display: block;
+      font-size: 25px;
+      font-family: $fontConR;
+      padding-bottom: 16px;
+    }
+    >p{
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+.detailDesignImage{
+  width: 100%; height: 100%
+}
+
+@import './res-detail';

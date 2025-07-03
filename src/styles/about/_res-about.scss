@@ -1,0 +1,292 @@
+@mixin width90() {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+// ========================================아이패드========================================
+@media (min-width:768px) and (max-width:1580px){
+  h2{
+    font-size: 40px;
+  }
+  
+  .about{
+    @include width90();
+    margin-top: 150px;
+    .about-profile{
+      padding: 20px 0 100px;
+      .profileImg{
+        width: 35%;
+      }
+      .profileRight{
+        width: 60%;
+        .profileText{
+          gap: 10px;
+          img:nth-of-type(1){width: 35px; height: 29px;}
+          .profileContent{
+            >b{
+              font-size: 35px;
+              line-height: 50px;
+              letter-spacing: -1px;
+            }
+            >p{
+              padding-top: 20px;
+              font-size: 22px;
+              line-height: 30px;
+              letter-spacing: -1px;
+            }
+          }
+          img:nth-of-type(2){
+            width: 35px; height: 29px;
+          }
+        }
+      }
+    }
+  }
+  
+  .aboutTools{
+    padding: 100px 0;
+    .aboutToolTop{
+      >p{font-size: 16px;}
+    }
+    .front{
+      .toolAll{
+        width: 100%;
+        padding: 40px 0;
+      }
+    }
+  }
+  
+  .aboutMeForm{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  
+  .aboutContact{
+    padding: 100px 0 150px;
+    .aboutContactTop{
+      >p{
+        font-size: 30px;
+      }
+    }
+  }
+  
+  //Education컴포넌트
+  .education{
+    margin-top: 20px;
+    .eduItem{
+      padding-left: 35px;
+      margin-bottom: 20px;
+      .dot{
+        width: 10px;
+        height: 10px;
+      }
+      .eduContent{
+        >h4{
+          font-size: 20px;
+        }
+        >b{
+          font-size: 16px;
+          line-height: 20px;
+          padding: 4px 0 12px;
+        }
+        >p{
+          padding-bottom: 6px;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  
+  //ToolsNoopen컴포넌트
+  .toolsNoopen{
+    .category-title{
+      width: 22%;
+      font-size: 25px;
+      letter-spacing: -1px;
+    }
+    .frontTools{
+      gap: 15px;
+    }
+  }
+  
+  //ToolsOpen컴포넌트
+  .toolsOpen{
+    padding-top: 30px;
+    margin-left: 22%;
+    .openText{
+      line-height: 20px;
+    }
+  }
+  
+  //Introduction컴포넌트
+  .introduction{
+    border-radius: 20px;
+    padding: 30px 30px;
+    >b{
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+    >p{
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: -0.5px;
+    }
+  }
+}
+
+
+// ========================================모바일========================================
+@media (max-width:767px) {
+  h2{
+    font-size: 30px;
+  }
+  
+  .about{
+    @include width90();
+    margin-top: 100px;
+    .about-profile{
+      padding: 20px 0 100px;
+      display: block;
+      .profileImg{
+        width: 50%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+      }
+      .profileRight{
+        width: 100%;
+        .profileText{
+          gap: 10px;
+          img:nth-of-type(1){width: 30px; height: 25px;}
+          .profileContent{
+            >b{
+              font-size: 28px;
+              line-height: 40px;
+              letter-spacing: -1px;
+            }
+            >p{
+              padding-top: 18px;
+              font-size: 20px;
+              line-height: 28px;
+              letter-spacing: -1px;
+            }
+          }
+          img:nth-of-type(2){
+            width: 30px; height: 25px;
+          }
+        }
+      }
+    }
+  }
+  
+  .aboutTools{
+    padding: 50px 0;
+    .aboutToolTop{
+      display: block;
+      >p{font-size: 14px;}
+    }
+    .front{
+      .toolAll{
+        width: 100%;
+        padding: 30px 0;
+        .toolsItem{
+          width: 15%;
+        }
+      }
+    }
+  }
+  
+  .aboutMeForm{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  
+  .aboutContact{
+    padding: 50px 0 100px;
+    .aboutContactTop{
+      display: block;
+      >p{
+        font-size: 20px;
+      }
+    }
+    .aboutContactItem{
+      display: block;
+      padding-top: 15px;
+    }
+  }
+  
+  //Education컴포넌트
+  .education{
+    margin-top: 20px;
+    display: block;
+    .eduItem{
+      padding-left: 35px;
+      margin-bottom: 20px;
+      .dot{
+        width: 10px;
+        height: 10px;
+      }
+      .eduContent{
+        >h4{
+          font-size: 20px;
+        }
+        >b{
+          font-size: 16px;
+          line-height: 20px;
+          padding: 4px 0 12px;
+        }
+        >p{
+          padding-bottom: 6px;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  
+  //ToolsNoopen컴포넌트
+  .toolsNoopen{
+    display: block;
+    .category-title{
+      width: 100%;
+      padding-bottom: 10px;
+      font-size: 25px;
+      letter-spacing: -1px;
+    }
+    .frontTools{
+      justify-content: flex-start;
+      gap: 5px;
+    }
+  }
+  
+  //ToolsOpen컴포넌트
+  .toolsOpen{
+    padding-top: 20px;
+    margin-left: 0;
+    .openText{
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  
+  //Introduction컴포넌트
+  .introduction{
+    border-radius: 20px;
+    padding: 25px 25px;
+    >b{
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+    >p{
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: -0.5px;
+    }
+  }
+}

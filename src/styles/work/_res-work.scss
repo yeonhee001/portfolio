@@ -1,0 +1,70 @@
+@mixin width90() {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  // ========================================아이패드========================================
+  @media (min-width:768px) and (max-width:1580px){
+    .work{
+      @include width90();
+    
+      margin-top: 150px;
+      .workTeam{
+        padding-bottom: 50px;
+      }
+      .workPersonal{
+        padding: 50px 0;
+      }
+      .workWeb{
+        padding: 50px 0;
+      }
+      .workItem{
+        grid-template-columns: repeat(3,1fr);
+        gap: 36px;
+      }
+    }
+    
+    .workTopBar{
+      padding-bottom: 16px;
+      >p{
+        font-size: 40px;
+      }
+      >span{
+        font-size: 16px;
+      }
+    }
+  }
+
+
+  // ========================================모바일========================================
+  @media (max-width:767px) {
+    .work{
+      @include width90();
+    
+      margin-top: 100px;
+      .workTeam{
+        padding-bottom: 35px;
+      }
+      .workPersonal{
+        padding: 35px 0;
+      }
+      .workWeb{
+        padding: 35px 0;
+      }
+      .workItem{
+        grid-template-columns: repeat(2,1fr);
+        gap: 36px;
+      }
+    }
+    
+    .workTopBar{
+      display: block;
+      padding-bottom: 16px;
+      >p{
+        font-size: 30px;
+      }
+      >span{
+        font-size: 12px;
+      }
+    }
+  }
