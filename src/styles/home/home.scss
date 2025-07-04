@@ -20,14 +20,15 @@
     }
     .homeText{
       @include width();
-      display: flex;
-      flex-direction: column;
       align-items: flex-start;
-      justify-content: space-evenly;
       height: 100vh;
+      position: relative;
       .homeMainTitle{
         display: flex;
         align-items: center;
+        position: absolute;
+        left: 0; top: 45%;
+        transform: translate(0, -45%);
         .homeTitle{
           .homeLine{
             white-space: normal;
@@ -62,7 +63,8 @@
       font-size: 30px;
       line-height: 43px;
       width: 100%;
-      // padding-top: 110px;
+      position: absolute;
+      left: 0; bottom: 5%;
       >p:nth-of-type(2){text-align: right;}
     }
   }

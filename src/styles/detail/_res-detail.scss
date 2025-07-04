@@ -11,6 +11,7 @@
   .detailLogo{
     @include width90();
     padding-bottom: 40px;
+    >img{height: 55px;}
   }
   .detailSlide{
     @include width90();
@@ -166,7 +167,7 @@
   .detailLogo{
     @include width90();
     padding-bottom: 20px;
-    >img{height: 70px;}
+    >img{height: 45px;}
   }
   .detailSlide{
     @include width90();

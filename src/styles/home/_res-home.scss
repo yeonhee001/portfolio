@@ -9,9 +9,6 @@
     .homeMain{
       .homeText{
         @include width90();
-        justify-content: flex-end;
-        gap: 20%;
-        padding-bottom: 3%;
         .homeMainTitle{
           .homeTitle{
             .homeLine{
@@ -109,9 +106,6 @@
     .homeMain{
       .homeText{
         @include width90();
-        justify-content: flex-end;
-        gap: 20%;
-        padding-bottom: 10%;
         .homeMainTitle{
           flex-direction: column;
           align-items: flex-start;
