@@ -19,13 +19,14 @@
       }
       .profileRight{
         width: 60%;
+        gap: 10px;
         .profileText{
           gap: 10px;
           img:nth-of-type(1){width: 35px; height: 29px;}
           .profileContent{
             >b{
               font-size: 35px;
-              line-height: 50px;
+              line-height: 45px;
               letter-spacing: -1px;
             }
             >p{
@@ -38,6 +39,13 @@
           img:nth-of-type(2){
             width: 35px; height: 29px;
           }
+        }
+        .profileBtn{
+          width: 100%;
+          justify-content: center;
+          gap: 10px;
+          .yellowBtn{background-color: $siteYellow; padding: 10px 20px; font-size: 18px;}
+          .grayBtn{background-color: $gitLightYellow; padding: 10px 20px; font-size: 18px;}
         }
       }
     }
@@ -158,6 +166,7 @@
       }
       .profileRight{
         width: 100%;
+        gap: 10px;
         .profileText{
           gap: 10px;
           img:nth-of-type(1){width: 30px; height: 25px;}
@@ -177,6 +186,9 @@
           img:nth-of-type(2){
             width: 30px; height: 25px;
           }
+        }
+        .profileBtn{
+          gap: 10px;
         }
       }
     }

@@ -9,6 +9,7 @@ import Contact from '../component/_common/Contact';
 import TopBtn from '../component/icons/TopBtn';
 import '../styles/about/about.scss'
 import toolList from '../data/toolList.json';
+import BtnItem from '../component/detail/BtnItem';
 
 function About() {
   const [openCategory, setOpenCategory] = useState('Front_end');
@@ -63,6 +64,13 @@ function About() {
     },
   ];
 
+  const download = ()=>{
+    const link = document.createElement('a');
+    link.href = '/소연희_입사지원서.pdf';
+    link.download = '소연희_입사지원서.pdf';
+    link.click();
+  }
+
   useEffect(()=>{
     window.scrollTo(0,0);
   },[])
@@ -86,6 +94,18 @@ function About() {
               </p>
             </div>
             <img src="/imgs/QuoteTwoIcon.svg" alt="QuoteTwoIcon" />
+          </div>
+          <div className='profileBtn'>
+            <BtnItem
+              className={'yellowBtn'}
+              text={'📑 이력서 다운받기'}
+              onClick={download}
+            />
+            <BtnItem
+              className={'grayBtn'}
+              text={'📁 Notion 바로가기'}
+              onClick={() => window.open('https://www.notion.so/soyeonhee/21d2ffab606380aabecad93e71406817', '_blank', 'noopener,noreferrer')}
+            />
           </div>
         </div>
       </div>

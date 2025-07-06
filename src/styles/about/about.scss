@@ -29,6 +29,7 @@ h2{
       justify-content: space-between;
       align-items: center;
       cursor: pointer;
+      gap: 40px;
       .profileText{
         display: flex;
         gap: 30px;
@@ -36,7 +37,7 @@ h2{
         .profileContent{
           >b{
             text-align: center;
-            font-family: $fontConB;
+            font-family: $fontConR;
             font-size: 50px;
             line-height: 67px;
             display: block;
@@ -53,6 +54,14 @@ h2{
           width: 49px; height: 41px;
           align-self: flex-end;
         }
+      }
+      .profileBtn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .yellowBtn{background-color: $siteYellow;}
+        .grayBtn{background-color: $gitLightYellow;}
       }
     }
   }
